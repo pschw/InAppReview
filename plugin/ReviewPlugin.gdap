@@ -1,0 +1,8 @@
+[config]
+
+name="ReviewPlugin"
+binary_type="local"
+binary="ReviewPlugin.release.aar"
+
+[dependencies]
+remote=["com.google.android.play:core:1.8.0"]

@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magicnut.android.godotreviewplugin">
+
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.ReviewPlugin"
+            android:value="magicnut.android.godotreviewplugin.ReviewPlugin" />
+    </application>
+    /
+</manifest>

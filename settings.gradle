@@ -1,0 +1,3 @@
+include ':godot-lib.3.2.3.stable.release'
+include ':GodotReviewPlugin'
+rootProject.name = "GodotInAppReviewPlugin"
