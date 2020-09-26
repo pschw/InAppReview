@@ -8,7 +8,7 @@ Support my work:
 This plugin implements the [Google Play In-App Review API](https://developer.android.com/guide/playcore/in-app-review/) for [Godot 3.2.3](https://godotengine.org/).
 
 See the plugin in action:\
-[![Demo video](https://github.com/pschw/InAppReview/blob/main/thumbnail_mini.png?raw=true)](https://youtube.com "Demo video")
+[![Demo video](https://github.com/pschw/InAppReview/blob/main/thumbnail_mini.png?raw=true)](https://youtu.be/yeLkmzhKMUg "Demo video")
 
 ## Adding the plugin to Godot 3.2.3
 1. Follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html) to configure, install and enable an Android Custom Build.
