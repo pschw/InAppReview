@@ -3,19 +3,20 @@ Support my work:
 **Follow me on [Twitter](https://twitter.com/pascalschwenke) and add me on [LinkedIn](https://www.linkedin.com/in/pascal-schwenke-537a8a169/)!**
 
 
-# In-App Review plugin for Godot 3.2.3
+# In-App Review plugin for Godot 3.3
 
-This plugin implements the [Google Play In-App Review API](https://developer.android.com/guide/playcore/in-app-review/) for [Godot 3.2.3](https://godotengine.org/).
+This plugin implements the [Google Play In-App Review API](https://developer.android.com/guide/playcore/in-app-review/) for [Godot 3.3](https://godotengine.org/).
 
 See the plugin in action:\
 [![Demo video](https://github.com/pschw/InAppReview/blob/main/thumbnail_mini.png?raw=true)](https://youtu.be/yeLkmzhKMUg "Demo video")
 
-## Adding the plugin to Godot 3.2.3
+## Adding the plugin to Godot 3.3
 1. Follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html) to configure, install and enable an Android Custom Build.
 2. Download the In-App Review plugin from the release tab.
 3. Extract the contents of InAppReviewPlugin.7z to `res://android/plugins`
 4. Call the plugin from a godot script (see chapter below).
-5. When exporting your game via a preset in `Project>Export...` make sure that `Use Custom Build` and `Review Plugin` is checked.
+5. Go to the folder `res://android/build`open the file config.gradle and make sure at least `minSdk : 21` is set.
+6. When exporting your game via a preset in `Project>Export...` make sure that `Use Custom Build` and `Review Plugin` is checked.
 
 ## Using the plugin in a Godot script
 Check if the singleton instance of `ReviewPlugin` is available. Optionally you can connect the signals of the plugin.
