@@ -11,6 +11,7 @@ import com.google.android.play.core.tasks.Task;
 import org.godotengine.godot.Godot;
 import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.SignalInfo;
+import org.godotengine.godot.plugin.UsedByGodot;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,24 +31,13 @@ public class ReviewPlugin extends GodotPlugin {
      */
     public ReviewPlugin(Godot godot) {
         super(godot);
-        activity = godot;
+        activity = godot.getActivity();
     }
 
     @NonNull
     @Override
     public String getPluginName() {
         return PLUGIN_NAME;
-    }
-
-    /**
-     * Return all the method names as list that can be called from godot side.
-     *
-     * @return
-     */
-    @NonNull
-    @Override
-    public List<String> getPluginMethods() {
-        return Arrays.asList("startInAppReview");
     }
 
     /**
@@ -67,6 +57,7 @@ public class ReviewPlugin extends GodotPlugin {
         return signals;
     }
 
+    @UsedByGodot
     public void startInAppReview() {
         activity.runOnUiThread(() -> {
             ReviewManager manager = ReviewManagerFactory.create(activity);

@@ -18,3 +18,4 @@ gradle/wrapper/gradle-wrapper.properties
 gradlew.bat
 gradlew
 godot-lib.3.2.3.stable.release/build/
+godot-lib.3.3.stable.release/build/.transforms/
