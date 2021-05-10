@@ -13,8 +13,6 @@ import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.SignalInfo;
 import org.godotengine.godot.plugin.UsedByGodot;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 
 import androidx.annotation.NonNull;
